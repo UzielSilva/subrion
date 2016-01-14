@@ -669,6 +669,7 @@ class iaSmarty extends Smarty
 		$height = isset($params['height']) ? ' height="' . $params['height'] . '"' : '';
 		$title = isset($params['title']) ? iaSanitize::html($params['title']) : '';
 		$class = isset($params['class']) ? ' class="' . $params['class'] . '"' : '';
+		$class = isset($params['style']) ? ' style="' . $params['style'] . '"' : '';
 
 		return sprintf(
 			'<img src="%s" alt="%s" title="%s"%s>',
